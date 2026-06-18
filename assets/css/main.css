@@ -904,12 +904,12 @@ a.contact-dropdown__item:hover { background: var(--gray-100); }
 .map-wrap { border-radius: var(--radius-md); overflow: hidden; margin-top: 1.25rem; }
 
 /* ── 19. Footer ──────────────────────────────────────────── */
-.footer { background: #0d1f14; color: rgba(255,255,255,.65); padding: 65px 0 0; }
+.footer { background: #0d1f14; color: rgba(255,255,255,.65); padding: 0; }
 .footer__grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.5fr;
   gap: 3rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 0;
 }
 .footer__brand { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.1rem; }
 .footer__logo-icon {
@@ -941,20 +941,16 @@ a.contact-dropdown__item:hover { background: var(--gray-100); }
 .footer__contact-item { display: flex; gap: .7rem; font-size: .85rem; margin-bottom: .7rem; align-items: flex-start; }
 .footer__contact-icon { color: var(--gold); flex-shrink: 0; margin-top: .1rem; }
 .footer__bottom {
-  border-top: 1px solid rgba(255,255,255,.08);
-  padding: 1.2rem 0;
+  border-top: none;
+  padding: 1rem 0;
 }
 .footer__bottom-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: .8rem;
-  flex-wrap: wrap;
-  gap: .75rem;
+  text-align: center;
 }
-.footer__bottom-links    { display: flex; gap: 1.5rem; }
-.footer__bottom-link     { color: rgba(255,255,255,.45); transition: var(--ease); }
-.footer__bottom-link:hover { color: var(--gold); }
 
 /* ── 20. Utilities ───────────────────────────────────────── */
 .text-center { text-align: center; }
