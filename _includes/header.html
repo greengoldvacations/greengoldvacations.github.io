@@ -1,0 +1,42 @@
+<nav class="nav{% unless page.url == "/" %} nav--solid{% endunless %}" id="mainNav">
+  <div class="nav__inner">
+
+    <a href="{{ '/' | relative_url }}" class="nav__logo">
+      <span class="nav__logo-icon">🌿</span>
+      <span class="nav__logo-text">
+        <span class="nav__logo-name">Green Gold</span>
+        <span class="nav__logo-tagline">Vacations · Kerala</span>
+      </span>
+    </a>
+
+    <ul class="nav__links">
+      {% for link in site.nav_links %}
+      <li>
+        <a href="{{ link.url | relative_url }}"
+           class="nav__link{% if page.url == link.url %} active{% endif %}">
+          {{ link.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <a href="{{ '/contact' | relative_url }}" class="btn btn--gold nav__cta">Book a Trip</a>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    {% for link in site.nav_links %}
+    <a href="{{ link.url | relative_url }}"
+       class="nav__link{% if page.url == link.url %} active{% endif %}">
+      {{ link.title }}
+    </a>
+    {% endfor %}
+    <a href="{{ '/contact' | relative_url }}" class="btn btn--gold">Book a Trip</a>
+  </div>
+</nav>

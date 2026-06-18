@@ -1,0 +1,50 @@
+title: Green Gold Vacations
+tagline: Discover God's Own Country
+description: >-
+  Green Gold Vacations is a premier travel agency from Kerala, offering curated
+  tour packages to explore the backwaters, hill stations, beaches, and cultural
+  heritage of God's Own Country.
+baseurl: ""
+url: "https://greengoldvacations.com"
+
+# Contact
+email: hello@greengoldvacations.com
+phone: "+91 98765 43210"
+whatsapp: "919876543210"
+address: "MG Road, Ernakulam, Kerala – 682011"
+
+# Social
+instagram_username: greengoldvacations
+facebook_username: greengoldvacations
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: Destinations
+    url: /destinations
+  - title: Packages
+    url: /packages
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+# Plugins (must be whitelisted by GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from the build output
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .devcontainer/
+  - .git/

@@ -1,0 +1,84 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+
+      <!-- Brand -->
+      <div>
+        <div class="footer__brand">
+          <span class="footer__logo-icon">🌿</span>
+          <span>
+            <div class="footer__logo-name">Green Gold Vacations</div>
+            <div class="footer__logo-tagline">God's Own Country</div>
+          </span>
+        </div>
+        <p class="footer__about">
+          Premier travel agency from Kerala, crafting unforgettable journeys
+          through God's Own Country since 2005. Let us show you the real magic
+          of Kerala.
+        </p>
+        <div class="footer__social">
+          <a href="https://facebook.com/{{ site.facebook_username }}" class="footer__social-link" title="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="https://instagram.com/{{ site.instagram_username }}" class="footer__social-link" title="Instagram" target="_blank" rel="noopener">in</a>
+          <a href="https://wa.me/{{ site.whatsapp }}" class="footer__social-link" title="WhatsApp" target="_blank" rel="noopener">wa</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="/" class="footer__link">› Home</a></li>
+          <li><a href="/destinations" class="footer__link">› Destinations</a></li>
+          <li><a href="/packages" class="footer__link">› Tour Packages</a></li>
+          <li><a href="/about" class="footer__link">› About Us</a></li>
+          <li><a href="/contact" class="footer__link">› Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Destinations -->
+      <div>
+        <h4 class="footer__heading">Destinations</h4>
+        <ul class="footer__links">
+          <li><a href="/destinations#alleppey" class="footer__link">› Alleppey</a></li>
+          <li><a href="/destinations#munnar" class="footer__link">› Munnar</a></li>
+          <li><a href="/destinations#thekkady" class="footer__link">› Thekkady</a></li>
+          <li><a href="/destinations#wayanad" class="footer__link">› Wayanad</a></li>
+          <li><a href="/destinations#kochi" class="footer__link">› Fort Kochi</a></li>
+          <li><a href="/destinations#varkala" class="footer__link">› Varkala</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="footer__heading">Contact Us</h4>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon">📍</span>
+          <span>{{ site.address }}</span>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon">📞</span>
+          <a href="tel:{{ site.phone }}" class="footer__link">{{ site.phone }}</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon">✉️</span>
+          <a href="mailto:{{ site.email }}" class="footer__link">{{ site.email }}</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon">🕐</span>
+          <span>Mon – Sat: 9 AM – 7 PM IST</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <span>&copy; {{ "now" | date: "%Y" }} Green Gold Vacations. All rights reserved.</span>
+      <div class="footer__bottom-links">
+        <a href="#" class="footer__bottom-link">Privacy Policy</a>
+        <a href="#" class="footer__bottom-link">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
