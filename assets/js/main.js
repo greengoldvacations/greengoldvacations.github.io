@@ -39,6 +39,28 @@
   }
 })();
 
+/* ── Contact Dropdown ─────────────────────────────────── */
+(function () {
+  const btn = document.getElementById('contactDropdownBtn');
+  const dd  = document.getElementById('contactDropdown');
+  if (!btn || !dd) return;
+
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const open = dd.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+    dd.setAttribute('aria-hidden', String(!open));
+  });
+
+  document.addEventListener('click', function () {
+    dd.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    dd.setAttribute('aria-hidden', 'true');
+  });
+
+  dd.addEventListener('click', function (e) { e.stopPropagation(); });
+})();
+
 /* ── Hero background Ken-Burns effect ───────────────────── */
 (function () {
   const bg = document.querySelector('.hero__bg');
