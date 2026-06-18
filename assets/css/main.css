@@ -461,7 +461,7 @@ a.contact-dropdown__item:hover { background: var(--gray-100); }
 .dest-mosaic {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px 300px;
+  grid-template-rows: repeat(2, 280px);
   gap: 1.25rem;
 }
 .dest-card {
@@ -471,7 +471,7 @@ a.contact-dropdown__item:hover { background: var(--gray-100); }
   cursor: pointer;
   transition: var(--ease);
 }
-.dest-card:first-child { grid-column: span 2; }
+.dest-card:first-child { grid-column: span 1; }
 .dest-card:hover { transform: scale(1.015); box-shadow: var(--shadow-lg); }
 .dest-card__img {
   width: 100%; height: 100%;
@@ -959,7 +959,7 @@ a.contact-dropdown__item:hover { background: var(--gray-100); }
 
 /* ── 21. Responsive ──────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .dest-mosaic { grid-template-rows: 360px 280px; }
+  .dest-mosaic { grid-template-rows: repeat(2, 240px); }
   .pkg-grid { grid-template-columns: 1fr 1fr; }
   .pkg-grid .pkg-card:nth-child(3) { display: none; }  /* show 2 on tablet */
   .testimonials-grid { grid-template-columns: 1fr 1fr; }
